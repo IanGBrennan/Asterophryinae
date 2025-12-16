@@ -1,0 +1,84 @@
+General Summary
+Total taxa        : 148
+Total loci        : 317
+Total sites       : 495,871
+Total characters  : 61,830,540
+Missing data      : 7,119,414
+%Missing data     : 11.51%
+GC content        : 0.39
+AT content        : 0.49
+Characters        : 61,830,540
+Nucleotides       : 54,631,501
+
+Alignment Summary
+Min length        : 377 bp
+Max length        : 5,535 bp
+Mean length       : 1564.26 bp
+
+Taxon Summary
+Min taxa          : 34
+Max taxa          : 148
+Mean taxa         : 119.76
+
+Character Count
+-                 : 7,119,414
+A                 : 16,195,417
+C                 : 12,395,360
+G                 : 11,784,740
+T                 : 14,255,984
+R                 : 19,759
+Y                 : 22,290
+S                 : 4,941
+W                 : 7,807
+K                 : 7,842
+M                 : 9,131
+B                 : 1,736
+D                 : 1,916
+H                 : 2,361
+V                 : 1,842
+
+Matrix Completeness
+100% taxa         : 14
+95% taxa          : 171
+90% taxa          : 186
+85% taxa          : 188
+80% taxa          : 190
+75% taxa          : 190
+70% taxa          : 192
+65% taxa          : 198
+60% taxa          : 267
+55% taxa          : 286
+50% taxa          : 292
+45% taxa          : 299
+40% taxa          : 305
+35% taxa          : 314
+30% taxa          : 316
+25% taxa          : 316
+20% taxa          : 317
+
+Conserved Sequences
+Conserved loci    : 0
+%Con. loci        : 0.00%
+Conserved sites   : 219,146
+%Con. sites       : 44.19%
+Min con. sites    : 163
+Max con. sites    : 2,455
+Mean con. sites   : 0.44
+
+Variable Sequences
+Var. loci         : 317
+%Var. loci        : 100.00%
+Var. sites        : 276,725
+%Var. sites       : 55.81%
+Min var. sites    : 136
+Max var. sites    : 3,098
+Mean var. sites   : 0.56
+
+Parsimony Informative
+Inf. loci         : 317
+%Inf. loci        : 100.00%
+Inf. sites        : 207,199
+%Inf. sites       : 41.78%
+Min inf. sites    : 89
+Max inf. sites    : 2,407
+Mean inf. sites   : 0.42

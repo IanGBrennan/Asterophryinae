@@ -1,0 +1,2 @@
+p1_RefAligned_Combo_ND4 = 1-1360
+p2_RefAligned_Combo_CYTB = 1361-2503

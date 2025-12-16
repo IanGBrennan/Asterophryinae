@@ -1,0 +1,8 @@
+1. Use bbmap.sh to map raw reads to the Microhyla mtGenome
+	$ bbmap.sh in1=XX_L001_R1_001.fastq.gz in2=XX_L001_R2_001.fastq.gz ref=Microhyla_mtGenome.fasta outm1=XX_ND4_R1.fastq.gz outm2=XX_ND4_R2.fastq.gz threads=8
+
+2. Assemble mtDNA reads using SPADES
+	$ spades.py --pe-1 1 XX_ND4_R1.fastq.gz --pe-2 1 XX_ND4_R2.fastq.gz -t 8 -o mtDNA_ND4
+
+3. Add to existing locus alignments
+	$ mafft --add XX_ND4.fasta Asterophryinae_ND4.fasta > Asterophryinae_ND4_update.fasta
