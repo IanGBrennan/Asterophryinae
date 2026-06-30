@@ -1,0 +1,416 @@
+#NEXUS
+begin taxa;
+	dimensions ntax=314;
+	taxlabels
+	AA24862_Asterophrys_sp
+	ABTC116941_Oreophryne_A_graminis
+	Aphantophryne_pansa_I5724
+	Asterophrys_turpicola_I5748
+	Austrochaperina_adelphe_I5713
+	Austrochaperina_adelphe_I5714
+	Austrochaperina_derongo_I5761
+	Austrochaperina_fryi_I20361
+	Austrochaperina_fryi_I20362
+	Austrochaperina_fryi_I20374
+	Austrochaperina_gracilipes_I5730
+	Austrochaperina_gracilipes_I5802
+	Austrochaperina_guttata_I20363
+	Austrochaperina_novaebritanniae_I25790
+	Austrochaperina_pluvialis_I5781
+	Austrochaperina_rivularis_I25792
+	Austrochaperina_robusta_I5770
+	BPBM13110_Asterophrys_slateri
+	BPBM13155_Callulops_eremnosphax
+	BPBM13862_Austrochaperina_B_macrorhyncha
+	BPBM14060_Xenorhina_ocellata
+	'BPBM15232_Austrochaperina_C_aff._palmipes.3'
+	'BPBM15234_Austrochaperina_C_aff._palmipes.3'
+	BPBM15259_Barygenys_resima
+	'BPBM15355_Hylophorbus_cf._rufescens.4'
+	'BPBM15373_Liophryne_aff._dentata.2'
+	'BPBM15410_Mantophryne_cf._lateralis.2'
+	BPBM15665_Copiula_minor
+	'BPBM15707_Cophixalus_sp.5'
+	'BPBM15708_Cophixalus_desticans_complex_sp.2'
+	BPBM15775_Oreophryne_B_equus
+	'BPBM15814_Cophixalus_variabilis_complex_sp.2'
+	'BPBM16181_Hylophorbus_cf._rufescens.2'
+	BPBM16217_Oreophryne_A_inornata
+	BPBM16546_Oreophryne_B_insulana
+	BPBM16554_Oreophryne_A_philosylleptoris
+	'BPBM17048_Hylophorbus_cf._rufescens.11'
+	BPBM17084_Copiula_oxyrhina
+	'BPBM17827_Copiula_sp.4'
+	BPBM17847_Choerophryne_sanguinopictus
+	BPBM17890_Oxydactyla_crassa
+	'BPBM17959_Cophixalus_sp.4'
+	BPBM17980_Oreophryne_B_matawan
+	'BPBM18002_Oreophryne_A_sp.7'
+	'BPBM18033_Hylophorbus_cf._rufescens.8'
+	BPBM18097_Cophixalus_timidus
+	BPBM18128_Oreophryne_B_picticrus
+	BPBM18315_Liophryne_allisoni
+	BPBM18317_Choerophryne_exclamitans
+	BPBM18351_Choerophryne_gunnari
+	BPBM18388_Austrochaperina_A_parkeri
+	'BPBM18392_Cophixalus_cheesmanae_complex_sp.1'
+	BPBM18429_Cophixalus_albolineatus
+	BPBM18430_Cophixalus_albolineatus
+	'BPBM18441_Hylophorbus_cf._rufescens.12'
+	'BPBM18450_Hylophorbus_cf._rufescens.6'
+	BPBM18504_Callulops_personatus
+	BPBM18509_Oreophryne_A_lemur
+	'BPBM18510_Oreophryne_A_cf._geislerorum.1'
+	BPBM18605_Copiula_fistulans
+	BPBM19236_Callulops_bicolor
+	'BPBM19265_Mantophryne_cf._lateralis.4'
+	BPBM19277_Cophixalus_iovaorum
+	BPBM19314_Cophixalus_ateles
+	BPBM19320_Cophixalus_nexipus
+	'BPBM19338_Hylophorbus_cf._rufescens.10'
+	BPBM19360_Liophryne_magnitympanum
+	'BPBM19371_Oreophryne_A_sp.4'
+	BPBM20112_Austrochaperina_A_yelaensis
+	'BPBM20126_Barygenys_aff._exsul.1'
+	BPBM20128_Barygenys_exsul
+	'BPBM20141_Callulops_doriae_complex_sp.2'
+	BPBM20142_Mantophryne_louisiadensis
+	BPBM20197_Cophixalus_melanops
+	BPBM20215_Cophixalus_cupricarenus
+	'BPBM20262_Copiula_sp.2'
+	'BPBM20287_Copiula_sp.6'
+	BPBM20357_Genyophryne_thomsoni
+	BPBM20369_Hylophorbus_extimus
+	'BPBM20396_Mantophryne_cf._lateralis.1'
+	BPBM20397_Mantophryne_axanthogaster
+	BPBM20440_Oreophryne_B_meliades
+	BPBM20469_Oreophryne_B_ezra
+	BPBM20501_Oreophryne_B_meliades
+	BPBM20522_Oreophryne_A_aurora
+	'BPBM20532_Oreophryne_B_sp.3'
+	'BPBM20538_Oreophryne_B_sp.3'
+	'BPBM20571_Oreophryne_B_sp.2'
+	'BPBM20572_Oreophryne_B_sp.3'
+	BPBM21474_Xenorhina_adisca
+	BPBM22481_Austrochaperina_A_novaebritanniae
+	'BPBM22504_Hylophorbus_cf._rufescens.12'
+	BPBM22511_Oreophryne_A_brachypus
+	BPBM22539_Oreophryne_A_loriae
+	BPBM22649_Choerophryne_brunhildae
+	BPBM22656_Austrochaperina_B_blumi
+	'BPBM22664_Austrochaperina_A_sp.1'
+	BPBM22665_Austrochaperina_B_basipalmata
+	BPBM22668_Austrochaperina_B_septentrionalis
+	BPBM22675_Choerophryne_longirostris
+	BPBM22685_Choerophryne_rostellifer
+	'BPBM22689_Oreophryne_A_cf._cameroni'
+	BPBM22692_Cophixalus_balbus
+	BPBM22708_Copiula_tyleri
+	'BPBM22740_Hylophorbus_cf._rufescens.16'
+	BPBM22754_Liophryne_schlaginhaufeni
+	BPBM22761_Hylophorbus_proekes
+	'BPBM22780_Mantophryne_cf._lateralis.3'
+	BPBM22784_Oreophryne_A_parkeri
+	BPBM22789_Oreophryne_A_parkopanorum
+	BPBM22793_Sphenophryne_cornuta
+	BPBM22795_Xenorhina_tumulus
+	BPBM22797_Xenorhina_arboricola
+	BPBM23740_Callulops_personatus
+	'BPBM25754_Choerophryne_sp.4'
+	BPBM25756_Barygenys_atra
+	BPBM25760_Barygenys_sp
+	'BPBM25837_Choerophryne_sp.3'
+	BPBM26182_Cophixalus_tomaiodactylus
+	BPBM26194_Cophixalus_phaeobalius
+	'BPBM27491_Cophixalus_verrucosus_complex_sp.3'
+	BPBM28153_Asterophrys_leucopus
+	BPBM28179_Xenorhina_mehelyi
+	BPBM28204_Asterophrys_turpicola
+	BPBM31337_Cophixalus_linnaeus
+	BPBM31477_Mantophryne_menziesi
+	'BPBM31808_Choerophryne_sp.1'
+	'BPBM31847_Cophixalus_cf._pipilans.2'
+	'BPBM31853_Genyophryne_aff._thomsoni.3'
+	'BPBM31882_Paedophryne_swiftorum_complex_sp.1'
+	'BPBM31979_Hylophorbus_cf._rufescens.5'
+	BPBM33637_Choerophryne_murrita
+	'BPBM33664_Choerophryne_darlingtoni_complex_sp.2'
+	BPBM33669_Callulops_wilhelmanus
+	BPBM33674_Oreophryne_A_notata
+	BPBM33707_Cophixalus_caverniphilus
+	BPBM33749_Hylophorbus_richardsi
+	BPBM33763_Oreophryne_A_anamiatoi
+	BPBM33780_Xenorhina_parkerorum
+	BPBM34677_Oreophryne_A_cameroni
+	BPBM34679_Choerophryne_proboscidea
+	BPBM34688_Oreophryne_A_biroi
+	BPBM34697_Xenorhina_oxycephala
+	BPBM34724_Hylophorbus_atrifasciatus
+	BPBM34741_Xenorhina_obesa
+	'BPBM35367_Choerophryne_sp.4'
+	BPBM35561_Choerophryne_gudrunae
+	'BPBM35692_Hylophorbus_cf._proekes'
+	'BPBM35735_Austrochaperina_B_sp.3'
+	BPBM35836_Callulops_microtis
+	'BPBM35843_Cophixalus_cf._pipilans.1'
+	'BPBM35866_Hylophorbus_cf._rufescens.15'
+	'BPBM35986_Hylophorbus_cf._rufescens.17'
+	'BPBM37122_Callulops_sp.1'
+	'BPBM37232_Hylophorbus_cf._rufescens.3'
+	BPBM37718_Cophixalus_clapporum
+	BPBM37753_Paedophryne_dekot
+	BPBM38904_Barygenys_apodasta
+	BPBM38914_Barygenys_maculata
+	'BPBM38939_Copiula_sp.7'
+	'BPBM38988_Oreophryne_B_sp.4'
+	'BPBM38990_Oreophryne_A_sp.2'
+	'BPBM38992_Oreophryne_A_sp.2'
+	'BPBM39000_Oreophryne_B_sp.1'
+	'BPBM39007_Copiula_sp.3'
+	'BPBM39048_Cophixalus_sp.3'
+	'BPBM39156_Oreophryne_A_sp.1'
+	'BPBM39244_Oreophryne_A_sp.3'
+	'BPBM39344_Oreophryne_B_sp.4'
+	'BPBM39357_Oreophryne_B_sp.6'
+	'BPBM39366_Oreophryne_A_sp.5'
+	BPBM39510_Oreophryne_B_phoebe
+	'BPBM39569_Hylophorbus_cf._rufescens.9'
+	'BPBM39631_Hylophorbus_cf._rufescens.7'
+	BPBM39638_Hylophorbus_myopicus
+	BPBM39929_Liophryne_miniafia
+	BPBM39991_Choerophryne_bryonopsis
+	'BPBM40000_Austrochaperina_A_sp.2'
+	'BPBM40083_Copiula_sp.1'
+	BPBM40135_Mantophryne_insignis
+	BPBM40143_Oreophryne_B_brunnea
+	'BPBM40145_Oreophryne_A_sp.6'
+	'BPBM41681_Aphantophryne_B_cf._pansa.3'
+	'BPBM41682_Aphantophryne_B_cf._pansa.3'
+	'BPBM41683_Aphantophryne_B_cf._pansa.3'
+	'BPBM41685_Aphantophryne_B_cf._pansa.3'
+	BPBM47713_Paedophryne_amauensis
+	'BPBM47733_Choerophryne_darlingtoni_complex_sp.1'
+	'BPBM47780_Cophixalus_cf._cryptotympanum'
+	'BPBM47786_Callulops_sp.2'
+	'BPBM47792_Hylophorbus_cf._rufescens.14'
+	BPBM47804_Cophixalus_darlingtoni
+	'BPBM47888_Hylophorbus_cf._rufescens.13'
+	'BPBM48036_Paedophryne_sp.2'
+	'BPBM5299_Aphantophryne_A_cf._pansa'
+	'BPBM8312_Aphantophryne_B_cf._pansa.2'
+	CMNH1366_Oreophryne_A_anulata
+	Callulops_doriae_I5737
+	Choerophryne_proboscidea_I20392
+	Cophixalus_aenigma_I20375
+	Cophixalus_aenigma_I20376
+	Cophixalus_aenigma_I20377
+	Cophixalus_australis_I5727
+	Cophixalus_australis_I5771
+	Cophixalus_australis_I5785
+	Cophixalus_australis_I5790
+	Cophixalus_balbus_I5764
+	Cophixalus_bewaniensis_I8899
+	Cophixalus_biroi_I5740
+	Cophixalus_bombiens_I20378
+	Cophixalus_bombiens_I5769
+	Cophixalus_cheesmanae_I20364
+	Cophixalus_concinnus_I20379
+	Cophixalus_crepitans_I5768
+	Cophixalus_cryptotympanum_I5735
+	Cophixalus_exiguus_I5793
+	Cophixalus_hinchinbrookensis_I5788
+	Cophixalus_hosmeri_I20380
+	Cophixalus_hosmeri_I20381
+	Cophixalus_hosmeri_I5774
+	Cophixalus_hosmeri_I5775
+	Cophixalus_infacetus_I20382
+	Cophixalus_kaindiensis_I5720
+	Cophixalus_kulakula_I5766
+	Cophixalus_mcdonaldi_I5787
+	Cophixalus_misimae_I25793
+	Cophixalus_neglectus_I20384
+	Cophixalus_neglectus_I20385
+	Cophixalus_nubicola_I20365
+	Cophixalus_nubicola_I20366
+	Cophixalus_parkeri_I5722
+	Cophixalus_petrophilus_I5797
+	Cophixalus_petrophilus_I5801
+	Cophixalus_riparius_I5723
+	Cophixalus_saxatilis_I20387
+	Cophixalus_variegatus_I5725
+	Cophixalus_zweifeli_I20388
+	Cophixalus_zweifeli_I20389
+	FK15527_Paedophryne_verrucosa
+	FK16913_Paedophryne_titan
+	FK_6919_Callulops_robustus
+	Genyophryne_thomsoni_I20368
+	Hylophorbus_rainerguntheri_I5733
+	I5731
+	I5734
+	I8900
+	'JAM11383_Oreophryne_B_sp.5'
+	KU321316_Oreophryne_A_nana
+	Kalophrynus_interlineatus_I5752
+	Kaloula_picta_I25794
+	Liophryne_rhododactyla_I20369
+	'MB233_Cophixalus_sp.1'
+	'MB291_Paedophryne_sp.1'
+	'MB294_Hylophorbus_cf._rufescens.12'
+	MB300_Choerophryne_gunnari
+	'MB302_Cophixalus_sp.2'
+	'MB309_Copiula_sp.5'
+	'MB327_Xenorhina_sp.1'
+	'MB331_Mantophryne_cf._lateralis.4'
+	MB342_Oreophryne_A_loriae
+	'MB463_Choerophryne_sp.2'
+	'MB466_Choerophryne_sp.1'
+	'MB470_Cophixalus_cheesmanae_complex_sp.2'
+	'MB472_Choerophryne_sp.4'
+	'MB475_Austrochaperina_C_aff._palmipes.4'
+	'MB479_Mantophryne_cf._lateralis.5'
+	MB482_Cophixalus_linnaeus
+	'MB483_Hylophorbus_cf._rufescens.5'
+	'MB484_Oreophryne_A_cf._geislerorum.2'
+	'MB486_Paedophryne_swiftorum_complex_sp.2'
+	'MB508_Callulops_doriae_complex_sp.1'
+	'MB518_Mantophryne_cf._lateralis.1'
+	'MB539_Austrochaperina_C_aff._palmipes.2'
+	'MB556_Hylophorbus_cf._rufescens.1'
+	'MB571_Cophixalus_variabilis_complex_sp.3'
+	'MB583_Cophixalus_verrucosus_complex_sp.2'
+	'MB593_Liophryne_aff._dentata.3'
+	'MB617_Cophixalus_desticans_complex_sp.1'
+	'MB626_Genyophryne_aff._thomsoni.2'
+	MB627_Oreophryne_B_penelopia
+	Metamagnusia_slateri_I5807
+	Microhyla_achatina_I20370
+	Microhyla_berdmorei_I25795
+	Microhyla_pulchra_REFERENCE
+	Micryletta_inornata_I5751
+	Oreophryne_anamiatoi_I20371
+	Oreophryne_biroi_I5754
+	Oreophryne_brachypus_I5750
+	Oreophryne_hypsiops_I25796
+	Oreophryne_notata_I20372
+	Oxydactyla_alpestris_I5765
+	Pseudocallulops_sp_I5732
+	Sphenophryne_cornuta_I20373
+	TNHC58922_Oreophryne_B_variabilis
+	UMMZ211174_Dyscophis_antongilli
+	UMMZ211181_Platypelis_grandis
+	UMMZ219489_Scaphiophryne_marmorata
+	'UMMZ242212_Austrochaperina_C_aff._palmipes.1'
+	'UMMZ242226_Callulops_doriae_complex_sp.1'
+	'UMMZ242232_Cophixalus_desticans_complex_sp.1'
+	'UMMZ242263_Cophixalus_variabilis_complex_sp.1'
+	'UMMZ242309_Genyophryne_aff._thomsoni.1'
+	'UMMZ242317_Hylophorbus_cf._rufescens.1'
+	'UMMZ242338_Liophryne_aff._dentata.1'
+	'UMMZ242349_Cophixalus_verrucosus_complex_sp.1'
+	'UMMZ242361_Mantophryne_cf._lateralis.1'
+	UMMZ242398_Oreophryne_B_penelopia
+	'UMMZ242404_Oreophryne_A_sp.8'
+	Xenorhina_arboricola_I5763
+	ZMB63882_Asterophrys_marani
+	'ZMB70185_Asterophrys_cf._marani'
+	'ZMB70187_Asterophrys_cf._marani'
+	ZMB70535_Asterophrys_eurydactylus
+	ZMB74609_Asterophrys_senglaubi
+;
+end;
+
+begin trees;
+	tree tree_1 = [&R] (AA24862_Asterophrys_sp:0.10403,((((((((((((((((((((((ABTC116941_Oreophryne_A_graminis:0.14325,BPBM33674_Oreophryne_A_notata:0.034928)[&label=100]:0.03354,Oreophryne_notata_I20372:0.031338)[&label=100]:0.067709,(('BPBM22689_Oreophryne_A_cf._cameroni':0.106582,KU321316_Oreophryne_A_nana:0.059906)[&label=96]:0.016975,CMNH1366_Oreophryne_A_anulata:0.047198)[&label=95]:0.026289)[&label=95]:0.036782,BPBM34677_Oreophryne_A_cameroni:0.116532)[&label=99]:0.037697,Cophixalus_cryptotympanum_I5735:0.272344)[&label=50]:0.010298,BPBM22784_Oreophryne_A_parkeri:0.298681)[&label=48]:0.01654,(BPBM34688_Oreophryne_A_biroi:0.013876,Oreophryne_biroi_I5754:0.231217)[&label=99]:0.264894)[&label=49,!collapse={"collapsed",0.06819998079999989},!name="Oreophryne"]:0.016505,(((((BPBM16217_Oreophryne_A_inornata:0.118444,((BPBM16554_Oreophryne_A_philosylleptoris:0.071018,'UMMZ242404_Oreophryne_A_sp.8':0.023496)[&label=99]:0.122387,(('BPBM18510_Oreophryne_A_cf._geislerorum.1':0.020504,((BPBM22511_Oreophryne_A_brachypus:2.0E-6,Oreophryne_brachypus_I5750:0.002447)[&label=100]:0.030618,'BPBM39156_Oreophryne_A_sp.1':0.016233)[&label=99]:0.004752)[&label=100]:0.023874,'MB484_Oreophryne_A_cf._geislerorum.2':0.046171)[&label=100]:0.087359)[&label=99]:0.035635)[&label=97]:0.017497,((('BPBM18002_Oreophryne_A_sp.7':0.040654,((BPBM18509_Oreophryne_A_lemur:0.049592,('BPBM19371_Oreophryne_A_sp.4':0.028982,'BPBM39366_Oreophryne_A_sp.5':0.007994)[&label=100]:0.022348)[&label=100]:0.016069,(('BPBM38990_Oreophryne_A_sp.2':0.002959,'BPBM38992_Oreophryne_A_sp.2':3.0E-6)[&label=100]:0.036162,'BPBM39244_Oreophryne_A_sp.3':0.009398)[&label=88]:0.022643)[&label=56]:0.015296)[&label=46]:0.008471,'BPBM40145_Oreophryne_A_sp.6':0.040097)[&label=98]:0.060798,(BPBM22539_Oreophryne_A_loriae:0.001424,MB342_Oreophryne_A_loriae:0.006673)[&label=98]:0.100034)[&label=89]:0.03635)[&label=86]:0.031287,BPBM20522_Oreophryne_A_aurora:0.210343)[&label=61,!collapse={"collapsed",0.2382448185999999},!name="Oreophryne"]:0.011388,(Cophixalus_bewaniensis_I8899:0.343239,Oreophryne_hypsiops_I25796:0.135465)[&label=88]:0.079792)[&label=87]:0.044421,((BPBM22789_Oreophryne_A_parkopanorum:3.0E-6,'BPBM5299_Aphantophryne_A_cf._pansa':3.0E-6)[&label=100,!collapse={"collapsed",0.3761171403},!name="Aphantophryne"]:0.145794,(BPBM33763_Oreophryne_A_anamiatoi:0.007059,Oreophryne_anamiatoi_I20371:0.021776)[&label=99,!collapse={"collapsed",0.32821102609999997},!name="Oreophryne"]:0.171927)[&label=91]:0.049963)[&label=47]:0.00894)[&label=99]:0.033371,(((('BPBM31882_Paedophryne_swiftorum_complex_sp.1':0.00765,'MB486_Paedophryne_swiftorum_complex_sp.2':5.9E-4)[&label=100]:0.137985,(BPBM47713_Paedophryne_amauensis:0.007241,'MB291_Paedophryne_sp.1':0.015219)[&label=100]:0.116047)[&label=100]:0.059025,('BPBM48036_Paedophryne_sp.2':0.047389,FK16913_Paedophryne_titan:0.114955)[&label=100]:0.05152)[&label=100]:0.055125,FK15527_Paedophryne_verrucosa:0.190582)[&label=97,!collapse={"collapsed",0.28426459179999997},!name="Paedophryne"]:0.070137)[&label=71]:0.004849,('JAM11383_Oreophryne_B_sp.5':0.137111,TNHC58922_Oreophryne_B_variabilis:0.05538)[&label=100,!collapse={"collapsed",0.23010243879999992},!name="Oreophryne"]:0.251823)[&label=74]:0.013088,(((('BPBM15707_Cophixalus_sp.5':0.188911,'BPBM38939_Copiula_sp.7':0.054905)[&label=100]:0.049474,BPBM19277_Cophixalus_iovaorum:0.09358)[&label=100]:0.131271,(((((('BPBM15708_Cophixalus_desticans_complex_sp.2':0.051858,('MB617_Cophixalus_desticans_complex_sp.1':0.006411,'UMMZ242232_Cophixalus_desticans_complex_sp.1':0.001878)[&label=98]:0.024456)[&label=100]:0.40298,((((BPBM18429_Cophixalus_albolineatus:3.0E-6,BPBM18430_Cophixalus_albolineatus:3.0E-6)[&label=100]:0.077647,'BPBM31847_Cophixalus_cf._pipilans.2':0.074607)[&label=100]:0.122189,Cophixalus_misimae_I25793:0.103747)[&label=99]:0.053042,(BPBM20215_Cophixalus_cupricarenus:0.073183,BPBM37718_Cophixalus_clapporum:0.110453)[&label=100]:0.094554)[&label=98]:0.016285)[&label=89]:0.011407,BPBM20197_Cophixalus_melanops:0.15239)[&label=90]:0.012279,(((((Cophixalus_aenigma_I20375:3.0E-6,Cophixalus_aenigma_I20376:3.0E-6)[&label=100]:0.004681,Cophixalus_aenigma_I20377:0.022729)[&label=100]:0.057873,((Cophixalus_bombiens_I20378:2.0E-6,Cophixalus_bombiens_I5769:0.007795)[&label=100]:0.165096,Cophixalus_exiguus_I5793:0.093542)[&label=100]:0.020173)[&label=100]:0.052576,Cophixalus_saxatilis_I20387:0.156175)[&label=100]:0.038279,(((((((((((Cophixalus_australis_I5727:0.005009,Cophixalus_australis_I5771:0.069092)[&label=100]:0.015038,Cophixalus_australis_I5785:0.017379)[&label=100]:0.041456,Cophixalus_australis_I5790:0.077837)[&label=99]:0.023508,Cophixalus_hinchinbrookensis_I5788:0.063798)[&label=100]:0.14177,Cophixalus_mcdonaldi_I5787:0.090155)[&label=68]:0.014013,Cophixalus_kulakula_I5766:0.196811)[&label=66]:0.04316,(Cophixalus_infacetus_I20382:0.195972,(Cophixalus_zweifeli_I20388:0.003968,Cophixalus_zweifeli_I20389:2.0E-6)[&label=100]:0.160034)[&label=88]:0.061237)[&label=39]:2.0E-6,(Cophixalus_petrophilus_I5797:0.004793,Cophixalus_petrophilus_I5801:0.001739)[&label=100]:0.293019)[&label=96]:0.032547,(Cophixalus_neglectus_I20384:0.023879,Cophixalus_neglectus_I20385:0.007077)[&label=100]:0.20094)[&label=96]:0.042711,(((Cophixalus_hosmeri_I20380:2.0E-6,Cophixalus_hosmeri_I5775:3.0E-6)[&label=100]:3.0E-6,Cophixalus_hosmeri_I5774:3.0E-6)[&label=100]:0.002886,Cophixalus_hosmeri_I20381:3.0E-6)[&label=100]:0.226476)[&label=100]:0.027294,Cophixalus_crepitans_I5768:0.250388)[&label=100]:0.011441)[&label=90]:0.009826)[&label=100]:0.0157,(((('BPBM15814_Cophixalus_variabilis_complex_sp.2':0.048666,('MB571_Cophixalus_variabilis_complex_sp.3':0.023577,'UMMZ242263_Cophixalus_variabilis_complex_sp.1':0.026467)[&label=100]:0.011275)[&label=100]:0.096954,((BPBM19314_Cophixalus_ateles:0.088318,'MB233_Cophixalus_sp.1':0.102104)[&label=100]:0.037668,'MB302_Cophixalus_sp.2':0.145013)[&label=98]:0.012449)[&label=99]:0.004989,(BPBM18097_Cophixalus_timidus:0.023295,'BPBM39048_Cophixalus_sp.3':0.045692)[&label=100]:0.128757)[&label=100]:0.02748,(BPBM31337_Cophixalus_linnaeus:0.001059,MB482_Cophixalus_linnaeus:9.06E-4)[&label=100]:0.184584)[&label=100]:0.039838)[&label=100]:0.017328,((('BPBM17959_Cophixalus_sp.4':0.036944,BPBM19320_Cophixalus_nexipus:0.054489)[&label=100]:0.081808,('BPBM27491_Cophixalus_verrucosus_complex_sp.3':0.076573,('MB583_Cophixalus_verrucosus_complex_sp.2':0.017634,'UMMZ242349_Cophixalus_verrucosus_complex_sp.1':0.011614)[&label=100]:0.086038)[&label=100]:0.025771)[&label=100]:0.032919,(('BPBM18392_Cophixalus_cheesmanae_complex_sp.1':0.020763,'MB470_Cophixalus_cheesmanae_complex_sp.2':0.022377)[&label=100]:0.074502,Cophixalus_cheesmanae_I20364:0.151856)[&label=100]:0.023799)[&label=100]:0.041653)[&label=100]:0.01861)[&label=93]:0.006054,((((((BPBM22692_Cophixalus_balbus:0.081604,Cophixalus_balbus_I5764:0.077073)[&label=100]:0.086655,Cophixalus_biroi_I5740:0.191265)[&label=99]:0.048991,'BPBM35843_Cophixalus_cf._pipilans.1':0.220706)[&label=99]:0.060037,((BPBM33707_Cophixalus_caverniphilus:0.039566,I8900:0.057599)[&label=100]:0.029019,'BPBM47780_Cophixalus_cf._cryptotympanum':0.101926)[&label=100]:0.097314)[&label=99]:0.028088,(BPBM26182_Cophixalus_tomaiodactylus:0.18581,BPBM26194_Cophixalus_phaeobalius:0.140735)[&label=100]:0.04792)[&label=98]:0.01638,BPBM47804_Cophixalus_darlingtoni:0.24093)[&label=91]:0.009656)[&label=91,!collapse={"collapsed",0.08379986189999988},!name="Cophixalus"]:0.012108)[&label=82]:0.017853,((((((Aphantophryne_pansa_I5724:0.011591,('BPBM41683_Aphantophryne_B_cf._pansa.3':9.55E-4,'BPBM41685_Aphantophryne_B_cf._pansa.3':0.010311)[&label=97]:0.002046)[&label=75]:0.002034,'BPBM41681_Aphantophryne_B_cf._pansa.3':0.001019)[&label=75]:0.003193,'BPBM41682_Aphantophryne_B_cf._pansa.3':0.002699)[&label=100,!collapse={"collapsed",0.47491202920000003},!name="Aphantophryne"]:0.0999,('BPBM38988_Oreophryne_B_sp.4':6.55E-4,'BPBM39344_Oreophryne_B_sp.4':0.002353)[&label=100,!collapse={"collapsed",0.4898412542},!name="Oreophryne"]:0.100202)[&label=85]:0.010401,(Cophixalus_kaindiensis_I5720:0.309458,(((Cophixalus_nubicola_I20365:2.0E-6,Cophixalus_nubicola_I20366:3.0E-6)[&label=100]:0.144899,Cophixalus_riparius_I5723:0.11589)[&label=95]:0.026608,Cophixalus_parkeri_I5722:0.055231)[&label=99]:0.026561)[&label=100,!collapse={"collapsed",0.25617482140000003},!name="Cophixalus"]:0.037164)[&label=98]:0.034485,((((((((BPBM15775_Oreophryne_B_equus:0.048466,(BPBM18128_Oreophryne_B_picticrus:2.0E-6,'BPBM8312_Aphantophryne_B_cf._pansa.2':3.0E-6)[&label=100]:0.044391)[&label=100]:0.008582,BPBM39510_Oreophryne_B_phoebe:0.056526)[&label=100]:0.033313,(BPBM16546_Oreophryne_B_insulana:0.0556,(MB627_Oreophryne_B_penelopia:0.003999,UMMZ242398_Oreophryne_B_penelopia:2.0E-6)[&label=100]:0.110206)[&label=100]:0.045339)[&label=99]:0.019992,BPBM20469_Oreophryne_B_ezra:0.160737)[&label=85]:0.004509,(BPBM20440_Oreophryne_B_meliades:3.0E-6,BPBM20501_Oreophryne_B_meliades:0.002999)[&label=100]:0.155301)[&label=88]:0.01401,(BPBM17980_Oreophryne_B_matawan:0.068531,('BPBM39000_Oreophryne_B_sp.1':0.027916,BPBM40143_Oreophryne_B_brunnea:0.023394)[&label=100]:0.033329)[&label=100]:0.042938)[&label=100]:0.078273,(('BPBM20532_Oreophryne_B_sp.3':0.002523,('BPBM20538_Oreophryne_B_sp.3':0.001002,'BPBM20572_Oreophryne_B_sp.3':0.002135)[&label=100]:0.003495)[&label=100]:0.092182,'BPBM20571_Oreophryne_B_sp.2':0.121595)[&label=100]:0.046002)[&label=100]:0.045675,'BPBM39357_Oreophryne_B_sp.6':0.118655)[&label=93,!collapse={"collapsed",0.30543037280000007},!name="Oreophryne"]:0.009848)[&label=96]:0.012694)[&label=76]:0.005118,(((('BPBM15232_Austrochaperina_C_aff._palmipes.3':0.013641,'BPBM15234_Austrochaperina_C_aff._palmipes.3':0.001696)[&label=100]:0.024359,('MB539_Austrochaperina_C_aff._palmipes.2':0.012442,'UMMZ242212_Austrochaperina_C_aff._palmipes.1':0.02004)[&label=100]:0.036764)[&label=100]:0.105559,'MB475_Austrochaperina_C_aff._palmipes.4':0.094271)[&label=100,!collapse={"collapsed",0.4078635288},!name="Austrochaperina"]:0.07859,((((((BPBM17847_Choerophryne_sanguinopictus:0.086563,'MB463_Choerophryne_sp.2':0.073865)[&label=100]:0.042833,((BPBM18351_Choerophryne_gunnari:0.002728,MB300_Choerophryne_gunnari:0.001288)[&label=100]:0.090808,Cophixalus_variegatus_I5725:0.119122)[&label=98]:0.018465)[&label=100]:0.013764,'BPBM25837_Choerophryne_sp.3':0.131837)[&label=99]:0.022227,(('BPBM25754_Choerophryne_sp.4':0.00101,('BPBM35367_Choerophryne_sp.4':3.0E-6,'MB472_Choerophryne_sp.4':3.0E-6)[&label=90]:3.0E-6)[&label=100]:0.128776,BPBM39991_Choerophryne_bryonopsis:0.130715)[&label=73]:0.015934)[&label=99]:0.052138,(((BPBM18317_Choerophryne_exclamitans:0.026833,I5734:0.019026)[&label=99]:0.014208,('BPBM31808_Choerophryne_sp.1':9.9E-4,'MB466_Choerophryne_sp.1':3.0E-6)[&label=100]:0.013737)[&label=94]:0.008497,BPBM35561_Choerophryne_gudrunae:0.044856)[&label=100]:0.113394)[&label=100]:0.046755,(((BPBM22649_Choerophryne_brunhildae:0.151422,BPBM33637_Choerophryne_murrita:0.121235)[&label=99]:0.022785,('BPBM33664_Choerophryne_darlingtoni_complex_sp.2':0.023921,'BPBM47733_Choerophryne_darlingtoni_complex_sp.1':0.036498)[&label=100]:0.078722)[&label=100]:0.052892,(((BPBM22675_Choerophryne_longirostris:0.033785,BPBM34679_Choerophryne_proboscidea:0.056834)[&label=100]:0.013484,Choerophryne_proboscidea_I20392:0.050666)[&label=100]:0.064207,BPBM22685_Choerophryne_rostellifer:0.286106)[&label=100]:0.048721)[&label=100]:0.048158)[&label=98,!collapse={"collapsed",0.24695134130000007},!name="Choerophryne"]:0.01888)[&label=75]:0.006278)[&label=87]:0.003972,(((BPBM15259_Barygenys_resima:0.042403,(BPBM25756_Barygenys_atra:0.119066,BPBM38914_Barygenys_maculata:0.060741)[&label=100]:0.040637)[&label=100]:0.041829,'BPBM35986_Hylophorbus_cf._rufescens.17':0.095497)[&label=86]:0.038653,(('BPBM20126_Barygenys_aff._exsul.1':0.127116,BPBM20128_Barygenys_exsul:0.096522)[&label=100]:0.041085,BPBM38904_Barygenys_apodasta:0.193444)[&label=100]:0.14876)[&label=93,!collapse={"collapsed",0.2677534853},!name="Barygenys"]:0.049109)[&label=61]:0.003884,(((((Austrochaperina_adelphe_I5713:0.081365,Austrochaperina_adelphe_I5714:0.049849)[&label=100]:0.06943,(Austrochaperina_gracilipes_I5730:0.002263,(Austrochaperina_gracilipes_I5802:0.030131,Cophixalus_concinnus_I20379:0.210703)[&label=100]:0.068255)[&label=100]:0.247644)[&label=99]:0.055541,((Austrochaperina_fryi_I20361:3.0E-6,(Austrochaperina_fryi_I20362:0.001948,Austrochaperina_fryi_I20374:0.002392)[&label=99]:3.0E-6)[&label=100]:0.067496,(Austrochaperina_pluvialis_I5781:0.097782,Austrochaperina_robusta_I5770:0.074347)[&label=100]:0.0234)[&label=100]:0.025317)[&label=100]:0.033526,(Austrochaperina_guttata_I20363:0.103759,((BPBM13862_Austrochaperina_B_macrorhyncha:0.139465,BPBM22708_Copiula_tyleri:2.0E-6)[&label=99]:0.04486,(BPBM22656_Austrochaperina_B_blumi:2.0E-6,(BPBM22668_Austrochaperina_B_septentrionalis:0.195511,'BPBM35735_Austrochaperina_B_sp.3':0.038814)[&label=98]:0.126483)[&label=95]:0.099291)[&label=91]:0.037122)[&label=91]:0.032674)[&label=93,!collapse={"collapsed",0.0},!name="Austrochaperina"]:0.034919,(((('BPBM15373_Liophryne_aff._dentata.2':0.054401,'UMMZ242338_Liophryne_aff._dentata.1':0.006462)[&label=100,!collapse={"collapsed",0.38272074690000024},!name="Liophryne"]:0.049466,(((BPBM20357_Genyophryne_thomsoni:0.056212,('BPBM31853_Genyophryne_aff._thomsoni.3':0.078371,Genyophryne_thomsoni_I20368:0.031902)[&label=100]:0.084649)[&label=82]:0.038526,('MB626_Genyophryne_aff._thomsoni.2':0.016352,'UMMZ242309_Genyophryne_aff._thomsoni.1':0.004817)[&label=100]:0.033131)[&label=86,!collapse={"collapsed",0.10993179490000005},!name="Genyophryne"]:0.099045,'MB593_Liophryne_aff._dentata.3':2.0E-6)[&label=64]:0.076065)[&label=99]:0.11414,BPBM22754_Liophryne_schlaginhaufeni:0.134997)[&label=56]:0.043586,((((BPBM17890_Oxydactyla_crassa:0.091305,BPBM19360_Liophryne_magnitympanum:0.100959)[&label=100]:0.033845,BPBM39929_Liophryne_miniafia:0.191143)[&label=100]:0.014806,Liophryne_rhododactyla_I20369:0.152669)[&label=85,!collapse={"collapsed",0.4094956579000002},!name="Liophryne"]:0.013411,(BPBM18315_Liophryne_allisoni:0.233792,(BPBM22793_Sphenophryne_cornuta:0.117352,Sphenophryne_cornuta_I20373:0.137692)[&label=100,!collapse={"collapsed",0.4112938035},!name="Sphenophryne"]:0.079463)[&label=49]:4.06E-4)[&label=80]:0.015459)[&label=66]:0.006274)[&label=53]:0.012362)[&label=52]:0.002505,((((((BPBM13155_Callulops_eremnosphax:0.088498,(BPBM35836_Callulops_microtis:0.038009,Pseudocallulops_sp_I5732:0.049822)[&label=100]:0.021934)[&label=100]:0.024539,(BPBM18504_Callulops_personatus:0.002088,BPBM23740_Callulops_personatus:0.007956)[&label=100]:0.066053)[&label=100]:0.067928,((((BPBM19236_Callulops_bicolor:0.038842,Callulops_doriae_I5737:0.047417)[&label=100]:0.013305,(('BPBM20141_Callulops_doriae_complex_sp.2':0.007179,('MB508_Callulops_doriae_complex_sp.1':3.0E-6,'UMMZ242226_Callulops_doriae_complex_sp.1':0.006085)[&label=100]:0.005031)[&label=100]:0.052189,'BPBM37122_Callulops_sp.1':0.073597)[&label=100]:0.018167)[&label=100]:0.013441,FK_6919_Callulops_robustus:0.085769)[&label=100]:0.042685,'BPBM47786_Callulops_sp.2':0.094593)[&label=81]:0.006905)[&label=80]:0.007251,BPBM33669_Callulops_wilhelmanus:0.116469)[&label=100,!collapse={"collapsed",0.41565782549999997},!name="Callulops"]:0.032078,(((((((('BPBM15355_Hylophorbus_cf._rufescens.4':0.043776,(('BPBM16181_Hylophorbus_cf._rufescens.2':0.045538,('MB556_Hylophorbus_cf._rufescens.1':0.003099,'UMMZ242317_Hylophorbus_cf._rufescens.1':0.00292)[&label=100]:0.033559)[&label=100]:0.016453,'BPBM37232_Hylophorbus_cf._rufescens.3':0.067421)[&label=94]:0.008745)[&label=92]:0.005001,('BPBM18450_Hylophorbus_cf._rufescens.6':0.034614,('BPBM31979_Hylophorbus_cf._rufescens.5':3.0E-6,'MB483_Hylophorbus_cf._rufescens.5':0.001077)[&label=100]:0.026624)[&label=100]:0.033692)[&label=100]:0.015767,(('BPBM17048_Hylophorbus_cf._rufescens.11':0.107254,'BPBM19338_Hylophorbus_cf._rufescens.10':0.030884)[&label=94]:0.013984,(('BPBM18033_Hylophorbus_cf._rufescens.8':0.035313,'BPBM39631_Hylophorbus_cf._rufescens.7':0.037681)[&label=100]:0.008052,'BPBM39569_Hylophorbus_cf._rufescens.9':0.03403)[&label=100]:0.016892)[&label=94]:0.013115)[&label=100]:0.045687,BPBM39638_Hylophorbus_myopicus:0.082033)[&label=100]:0.046268,(((((('BPBM18441_Hylophorbus_cf._rufescens.12':0.003995,'BPBM22504_Hylophorbus_cf._rufescens.12':9.73E-4)[&label=100]:0.001303,'MB294_Hylophorbus_cf._rufescens.12':0.005732)[&label=100]:0.030091,'BPBM47888_Hylophorbus_cf._rufescens.13':0.052129)[&label=100]:0.056382,'BPBM47792_Hylophorbus_cf._rufescens.14':0.116986)[&label=100]:0.034955,((((BPBM20369_Hylophorbus_extimus:0.001479,BPBM22761_Hylophorbus_proekes:0.094185)[&label=100]:0.084016,'BPBM22740_Hylophorbus_cf._rufescens.16':0.022021)[&label=96]:0.054806,'BPBM35866_Hylophorbus_cf._rufescens.15':0.085511)[&label=79]:2.0E-6,Hylophorbus_rainerguntheri_I5733:0.272189)[&label=70]:0.052742)[&label=68]:0.004549,'BPBM35692_Hylophorbus_cf._proekes':0.182372)[&label=55]:0.00682)[&label=96]:0.008362,BPBM34724_Hylophorbus_atrifasciatus:0.167057)[&label=95,!name="Hylophorbus",!collapse={"collapsed",0.24905741019999994}]:0.016293,(BPBM20142_Mantophryne_louisiadensis:0.073493,BPBM20397_Mantophryne_axanthogaster:0.054586)[&label=100,!collapse={"collapsed",0.43088643000000004},!name="Mantophryne"]:0.105633)[&label=61]:0.006931,((((('BPBM15410_Mantophryne_cf._lateralis.2':0.007977,BPBM37753_Paedophryne_dekot:0.150406)[&label=100]:0.029844,(('BPBM20396_Mantophryne_cf._lateralis.1':3.0E-6,'MB518_Mantophryne_cf._lateralis.1':3.0E-6)[&label=100]:0.001948,'UMMZ242361_Mantophryne_cf._lateralis.1':0.003014)[&label=100]:0.022249)[&label=100]:0.058075,(('BPBM19265_Mantophryne_cf._lateralis.4':0.005822,'MB331_Mantophryne_cf._lateralis.4':0.00538)[&label=100]:0.050262,('BPBM22780_Mantophryne_cf._lateralis.3':0.041085,'MB479_Mantophryne_cf._lateralis.5':0.034232)[&label=97]:0.014219)[&label=100]:0.052117)[&label=97]:0.014438,BPBM40135_Mantophryne_insignis:0.125801)[&label=100]:0.035392,BPBM31477_Mantophryne_menziesi:0.141305)[&label=100,!collapse={"collapsed",0.28086271370000004},!name="Mantophryne"]:0.047926)[&label=98]:0.019006)[&label=73]:0.009203,BPBM33749_Hylophorbus_richardsi:0.152639)[&label=94]:0.020302)[&label=71]:0.01304,((((Austrochaperina_derongo_I5761:0.05549,Austrochaperina_rivularis_I25792:0.095377)[&label=95]:0.006931,BPBM22665_Austrochaperina_B_basipalmata:0.113722)[&label=100,!collapse={"collapsed",0.458592408},!name="Austrochaperina"]:0.092014,Oxydactyla_alpestris_I5765:0.140367)[&label=75]:0.010078,(((((Austrochaperina_novaebritanniae_I25790:0.107761,BPBM22481_Austrochaperina_A_novaebritanniae:0.008624)[&label=100]:0.013649,'BPBM22664_Austrochaperina_A_sp.1':2.0E-6)[&label=100]:0.222304,(BPBM18388_Austrochaperina_A_parkeri:0.068919,'BPBM40000_Austrochaperina_A_sp.2':0.039084)[&label=100]:0.219714)[&label=92]:0.006107,BPBM20112_Austrochaperina_A_yelaensis:0.233492)[&label=81,!collapse={"collapsed",0.29743048690000007},!name="Austrochaperina"]:0.013636,(((BPBM15665_Copiula_minor:0.07768,(BPBM18605_Copiula_fistulans:0.084638,'BPBM20287_Copiula_sp.6':0.094435)[&label=85]:0.004051)[&label=74]:0.012453,('BPBM17827_Copiula_sp.4':0.064218,('BPBM20262_Copiula_sp.2':0.085807,'BPBM40083_Copiula_sp.1':0.061295)[&label=99]:0.009272)[&label=77]:0.009471)[&label=86]:0.020582,(BPBM17084_Copiula_oxyrhina:0.042765,'BPBM39007_Copiula_sp.3':0.082203)[&label=98]:0.02579)[&label=89,!collapse={"collapsed",0.4510679805000001},!name="Copiula"]:0.078299)[&label=69]:0.013519)[&label=54]:0.004089)[&label=77]:0.017578,(BPBM25760_Barygenys_sp:0.123191,(I5731:0.463459,(((Kalophrynus_interlineatus_I5752:0.24881,(Micryletta_inornata_I5751:0.226513,(UMMZ211181_Platypelis_grandis:0.343964,UMMZ219489_Scaphiophryne_marmorata:0.114895)[&label=100]:0.032471)[&label=99]:0.039664)[&label=91]:0.037826,(Kaloula_picta_I25794:0.190992,(Microhyla_achatina_I20370:0.181617,(Microhyla_berdmorei_I25795:0.156264,Microhyla_pulchra_REFERENCE:0.161491)[&label=97]:0.038995)[&label=100,!collapse={"collapsed",0.5535595494000003},!name="Microhyla"]:0.092923)[&label=98]:0.05489)[&label=90]:0.013786,UMMZ211174_Dyscophis_antongilli:0.259387)[&label=90]:0.06017)[&label=100]:0.11326)[&label=92]:0.018569)[&label=89]:0.024563,(((BPBM14060_Xenorhina_ocellata:0.258285,BPBM34741_Xenorhina_obesa:0.097216)[&label=100]:0.043234,BPBM33780_Xenorhina_parkerorum:0.139978)[&label=100]:0.020756,((BPBM21474_Xenorhina_adisca:0.208278,((BPBM22797_Xenorhina_arboricola:0.034324,Xenorhina_arboricola_I5763:0.017974)[&label=100]:0.075464,BPBM34697_Xenorhina_oxycephala:0.063758)[&label=100]:0.039212)[&label=100]:0.108351,((BPBM22795_Xenorhina_tumulus:0.184372,(BPBM28179_Xenorhina_mehelyi:0.048395,'MB327_Xenorhina_sp.1':0.125311)[&label=100]:0.052891)[&label=100]:0.091607,'MB309_Copiula_sp.5':0.118197)[&label=88]:0.068536)[&label=89]:0.044055)[&label=83,!collapse={"collapsed",0.2682645086000003},!name="Xenorhina"]:0.014676)[&label=100,!collapse={"collapsed",0.18304949910000023},!name="Asterophrys"]:0.070262,ZMB70535_Asterophrys_eurydactylus:0.149459)[&label=100]:0.034745,((Asterophrys_turpicola_I5748:0.002896,BPBM28204_Asterophrys_turpicola:0.004908)[&label=100]:0.141777,((BPBM13110_Asterophrys_slateri:0.016488,Metamagnusia_slateri_I5807:0.03263)[&label=100]:0.120174,BPBM28153_Asterophrys_leucopus:0.079909)[&label=100]:0.05109)[&label=100]:0.047767)[&label=100]:0.130829,('ZMB70185_Asterophrys_cf._marani':0.00111,'ZMB70187_Asterophrys_cf._marani':9.38E-4)[&label=100]:0.068597)[&label=97]:0.014709,(ZMB63882_Asterophrys_marani:0.001015,ZMB74609_Asterophrys_senglaubi:0.1692)[&label=99]:0.068717);
+end;
+
+begin figtree;
+	set appearance.backgroundColorAttribute="Default";
+	set appearance.backgroundColour=#ffffff;
+	set appearance.branchColorAttribute="User selection";
+	set appearance.branchColorGradient=false;
+	set appearance.branchLineWidth=1.0;
+	set appearance.branchMinLineWidth=0.0;
+	set appearance.branchWidthAttribute="Fixed";
+	set appearance.foregroundColour=#000000;
+	set appearance.hilightingGradient=false;
+	set appearance.selectionColour=#d2fabb;
+	set branchLabels.colorAttribute="User selection";
+	set branchLabels.displayAttribute="Branch times";
+	set branchLabels.fontName="Helvetica";
+	set branchLabels.fontSize=10;
+	set branchLabels.fontStyle=0;
+	set branchLabels.isShown=false;
+	set branchLabels.significantDigits=4;
+	set layout.expansion=0;
+	set layout.layoutType="RECTILINEAR";
+	set layout.zoom=0;
+	set legend.attribute="label";
+	set legend.fontSize=10.0;
+	set legend.isShown=false;
+	set legend.significantDigits=4;
+	set nodeBars.barWidth=4.0;
+	set nodeBars.displayAttribute=null;
+	set nodeBars.isShown=false;
+	set nodeLabels.colorAttribute="User selection";
+	set nodeLabels.displayAttribute="Node ages";
+	set nodeLabels.fontName="Helvetica";
+	set nodeLabels.fontSize=10;
+	set nodeLabels.fontStyle=0;
+	set nodeLabels.isShown=false;
+	set nodeLabels.significantDigits=4;
+	set nodeShapeExternal.colourAttribute="User selection";
+	set nodeShapeExternal.isShown=false;
+	set nodeShapeExternal.minSize=10.0;
+	set nodeShapeExternal.scaleType=Width;
+	set nodeShapeExternal.shapeType=Circle;
+	set nodeShapeExternal.size=4.0;
+	set nodeShapeExternal.sizeAttribute="Fixed";
+	set nodeShapeInternal.colourAttribute="User selection";
+	set nodeShapeInternal.isShown=false;
+	set nodeShapeInternal.minSize=10.0;
+	set nodeShapeInternal.scaleType=Width;
+	set nodeShapeInternal.shapeType=Circle;
+	set nodeShapeInternal.size=4.0;
+	set nodeShapeInternal.sizeAttribute="Fixed";
+	set polarLayout.alignTipLabels=false;
+	set polarLayout.angularRange=0;
+	set polarLayout.rootAngle=0;
+	set polarLayout.rootLength=100;
+	set polarLayout.showRoot=true;
+	set radialLayout.spread=7.0;
+	set rectilinearLayout.alignTipLabels=false;
+	set rectilinearLayout.curvature=0;
+	set rectilinearLayout.rootLength=100;
+	set scale.offsetAge=0.0;
+	set scale.rootAge=1.0;
+	set scale.scaleFactor=1.0;
+	set scale.scaleRoot=false;
+	set scaleAxis.automaticScale=true;
+	set scaleAxis.fontSize=8.0;
+	set scaleAxis.isShown=false;
+	set scaleAxis.lineWidth=1.0;
+	set scaleAxis.majorTicks=1.0;
+	set scaleAxis.minorTicks=0.5;
+	set scaleAxis.origin=0.0;
+	set scaleAxis.reverseAxis=false;
+	set scaleAxis.showGrid=true;
+	set scaleBar.automaticScale=true;
+	set scaleBar.fontSize=10.0;
+	set scaleBar.isShown=true;
+	set scaleBar.lineWidth=1.0;
+	set scaleBar.scaleRange=0.0;
+	set tipLabels.colorAttribute="User selection";
+	set tipLabels.displayAttribute="Names";
+	set tipLabels.fontName="Helvetica";
+	set tipLabels.fontSize=12;
+	set tipLabels.fontStyle=0;
+	set tipLabels.isShown=true;
+	set tipLabels.significantDigits=4;
+	set trees.order=true;
+	set trees.orderType="decreasing";
+	set trees.rooting=true;
+	set trees.rootingType="User Selection";
+	set trees.transform=false;
+	set trees.transformType="cladogram";
+end;
+

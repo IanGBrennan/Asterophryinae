@@ -1,0 +1,164 @@
+---
+title: |  
+  |
+  |  Supplemental Information to:
+  |
+  |  Phylogenomic assessment of microhylid frogs reveals
+  |  widespread taxonomic confusion in the Asterophryinae
+  |  and establishes the timing of diversification in Australia
+  |
+  |
+  |
+  | Document S1. Figures S1--SX and Tables S1--SX
+  |
+output:
+  bookdown::pdf_document2:
+      toc: true
+      number_sections: false
+      keep_tex: no
+  #    pandoc_args: ["--lua-filter", "figure_caption_patch.lua"]
+  #pdf_document: #default
+  #    toc: false
+  #    number_sections: false
+  #word_document:
+  #    reference_docx: /Users/ianbrennan/My Drive/R.Analyses/rMarkdown_CSLs/Word_Style_Reference_1.docx
+fontsize: 12pt
+linkcolor: orange 
+geometry: margin = 1in
+indent: true
+#csl: /Users/ianbrennan/My Drive/R.Analyses/rMarkdown_CSLs/current-biology.csl
+#bibliography: /Users/ianbrennan/Documents/GitHub/Tiliquini/Manuscript/Tiliquini_References.bib
+linestretch: 1 # use to adjust line spacing
+header-includes: 
+- \usepackage{float}
+- \usepackage[left]{lineno}
+- \usepackage{graphicx,kantlipsum,setspace}
+- \usepackage{caption}
+- \captionsetup[figure]{font={stretch=1}}
+- \captionsetup[table]{font={stretch=1}}
+#- \linenumbers
+#- \modulolinenumbers[5]
+- \pagenumbering{gobble}
+- \pagenumbering{arabic}
+- \newcommand{\beginsupplement}{  \setcounter{table}{0} \renewcommand{\thetable}{S\arabic{table}} \setcounter{figure}{0} \renewcommand{\thefigure}{S\arabic{figure}}} # renames the supplemental figures as S...
+- \usepackage{lscape}
+- \newcommand{\blandscape}{\begin{landscape}}
+- \newcommand{\elandscape}{\end{landscape}}
+- \captionsetup[figure]{labelfont={bf},name={Figure},labelsep=period}
+---
+
+```{r echo=FALSE,warning=FALSE}
+# this is so that figures are displayed in their proper place in the text, and not all at the end. 
+library(knitr)
+  opts_chunk$set(fig.path='figure/graphics-', cache.path='cache/graphics-', fig.align='center',
+                 external=TRUE, echo=TRUE, warning=FALSE, fig.pos='H')
+```
+
+\newpage
+
+\beginsupplement
+
+<!-- SUPPLEMENTARY FIGURES -->
+
+# Supplementary Information
+
+## Molecular Sampling
+
+```{r, echo=F}
+library(magrittr); library(kableExtra)
+sampi <- data.frame(Data = "Asterophryinae_SampleInfo.xlsx")
+kable(sampi, caption = "Table of molecular samples is included in `Sampling/Asterophryinae SampleInfo.xslx`.") %>%
+  kable_styling(font_size = 10, latex_options = "HOLD_position")
+```
+
+## Morphological Sampling
+
+Below, we provide information about the collection of morphological traits from the literature, as well as summary statistics about the sampling.
+
+```{r, echo=F}
+library(magrittr); library(kableExtra)
+mtraits <- read.csv("../Data/Morphology_Definitions.csv")
+kable(mtraits, caption = "Morphological measurements of Asterophryinae frogs, following Zweifel (1972; 2000).") %>%
+  kable_styling(font_size = 9, latex_options = "HOLD_position")
+```
+
+   
+
+```{r, echo=F}
+rd <- read.csv("../Data/Asterophryinae_RAWdata.csv")
+rd$Genus <- strex::str_before_first(rd$Genus.species," ")
+sample.df <- NULL
+for (k in unique(rd$Genus)){
+  curr.data <- dplyr::filter(rd, Genus == k)
+  sample.df <- rbind(sample.df, data.frame(Genus = k,
+                                           No.Species = length(unique(curr.data$Genus.species)),
+                                           No.Samples = nrow(curr.data)))
+}
+kable(sample.df, caption = "Number of species (No.Species) and samples (No.Samples) for each genus included in the morphological analyses.") %>%
+  kable_styling(font_size = 9, latex_options = "HOLD_position")
+```
+
+## Morphological Classification
+
+```{r Confusion, echo=FALSE, eval=T, out.height = '60%', fig.align="center", fig.cap="(ref:SF1)"}
+knitr::include_graphics("../Figures/Dimensionality_Classification/Classification_Error.pdf")
+```
+(ref:SF1) \small Classification error by Genus and classification method (color). Difference classification methods (FDA--Flexible Discriminant Analysis; LDA--Linear Discriminant Analysis; RF--Random Forest) show comparable levels of classification error and are typically low, with the exception of some genera.
+
+```{r, echo=F, message=F}
+library(tidyverse)
+err.RF <- read.csv("../Data/Classification_Analyses/RF_Confusion_LSR.csv")
+err.LDA <- read.csv("../Data/Classification_Analyses/LDA_Confusion_LSR.csv")
+err.MDA <- read.csv("../Data/Classification_Analyses/MDA_Confusion_LSR.csv")
+
+pairwise.RF <- pivot_longer(err.RF[,1:18], cols=-X, names_to="Assigned To", values_to="Frequency_RF")
+pairwise.LDA <- pivot_longer(err.LDA[,1:18], cols=-X, names_to="Assigned To", values_to="Frequency_LDA")
+pairwise.MDA <- pivot_longer(err.MDA[,1:18], cols=-X, names_to="Assigned To", values_to="Frequency_MDA")
+
+pairwise.all <- full_join(pairwise.RF, pairwise.LDA)
+pairwise.all <- full_join(pairwise.all, pairwise.MDA)
+colnames(pairwise.all)[[1]] <- "True Genus"
+pairwise.no0 <- pairwise.all[-which(pairwise.all$Frequency_RF==0 & pairwise.all$Frequency_LDA==0 & pairwise.all$Frequency_MDA==0),]
+
+bold_rows <- which(!pairwise.no0$`True Genus`==pairwise.no0$`Assigned To`)
+
+kable(pairwise.no0, caption = "Summary of pairwise model classifications across all three classification methods. Table is summarised as the actual genus of the sample (True Genus), the genus it was classified to (Assigned To), and the frequency with which individuals of that genus were classified to that specific other genus (Frequency), depending on method. Misclassifications are highlighted in red.") %>%
+  kable_styling(font_size = 7, latex_options = "HOLD_position") %>%
+  row_spec(bold_rows, bold = FALSE, color="red")
+```
+
+
+```{r PCA, echo=FALSE, eval=T, out.width = '70%',fig.align="center", fig.cap="(ref:SFX)"}
+knitr::include_graphics("../Figures/Dimensionality_Classification/Classifications_PCA_LDA_FDA_2.png")
+```
+(ref:SFX) \small Comparison of visualization of dimensionality reduction techniques. 
+
+
+
+### Error and Bias
+
+Measurement error and bias can be introduced to studies through a number of ways, including inter/intraobserver bias and lack of clarity around how measurements are taken. Haytek et al. (2001) highlights some of these sensitivities, particularly in inter/intraobserver bias. As a result, measurement error can go on to affect downstream interpretations. Our dataset comprises measurements taken across multiple decades by up to 13 different observers, leaving little ability to measure consistency, accuracy, and precision. Getting a single observer to re-measure dozens of individuals 20 or more times for hundreds of species is beyond the means of this study. In Haytek et al. (2001), the focus of the paper is sensitivity in intraspecific sampling. While we include intraspecific sampling in our dataset (none of which were originally published with supporting measurement error), our focus is above the species level. In this case the expectation is that interspecific variation (including error) is greater than intraspecific variation (including error), and that any error is random. To test this idea, we randomly downsampled our morphological dataset to 11 species with more than five individuals measured per species (total 94 individuals). We used this dataset to run a separate Random Forest analysis where the classifier was the species. Of these 11 species, only one (Cophixalus balbus) had a classification error > 0. Looking closer, this is driven by a single individual which is not confidently assigned to the correct species (<0.70). Given that of 94 individuals across 11 species, only a single individual is misidentified, we can feel relatively confident that our assumption that interspecific (and inter-generic) variation is greater than intraspecific variation is true. We believe this provides evidence of the reliability of the data for our purpose. 
+
+
+## Phylogenetics
+
+
+```{r hASTRAL, echo=FALSE, eval=T, out.height = '90%', fig.align="center", fig.cap="(ref:SF2)"}
+knitr::include_graphics("../Figures/Trees/Asterophryinae_MAFFT_hASTRAL.pdf")
+```
+(ref:SF2) \small Fully sampled sequence capture tree, estimated by weighted hybrid ASTRAL using IQTREE genetree inputs. Branch support values are indicated at nodes and colored according to value (white = 1; red <= 0.9).  
+
+```{r MCMCTree, echo=FALSE, eval=T, out.height = '90%', fig.align="center", fig.cap="(ref:SF3)"}
+knitr::include_graphics("../Figures/Trees/MCMCTree_Calibrations.pdf")
+```
+(ref:SF3) \small Time calibrated species tree of microhylid frogs highlights with confidence intervals indicated at nodes. Orange colored bars annotated with a circle indicate nodes calibrated by fossil evidence. These correspond to (A) *Beelzebufo ampinga* as a 66 million year minimum on the crown divergence of Neobatrachia; (B) *Calyptocephalella pichileufensis* as a 47.5 million year minimum on the split between Calyptocephalellidae and Myobatrachoidea; (C) *Thamatosaurus gezei* as a 33.9 million year minimum on the crown of Ranoidea; and (D) Ptychadenidae fossil as a 25 million year minimum on the split of Ptychadenidae and Phrynobatrachidae. 
+
+```{r mtDNA, echo=FALSE, eval=T, out.height = '90%', fig.align="center", fig.cap="(ref:SF4)"}
+knitr::include_graphics("../Figures/Trees/Asterophryinae_Concat_mtDNA.pdf")
+```
+(ref:SF4) \small IQTREE gene tree of concatented mitochondrial loci (CYTB, ND4). Newly assembled and placed samples are indicated by orange text. Incorporating new samples into the alignments of Hill et al. (2023) allows for a shared understanding of Asterophryinae taxonomy between mitochondrial and nuclear datasets. 
+
+
+<!-- ::: -->
+
+\newpage

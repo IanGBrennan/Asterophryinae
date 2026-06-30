@@ -54,7 +54,9 @@ def process_sample(reads1, reads2, reference, sample, threads, error_log):
         f"ref={reference}",
         f"outm1={mapped1}",
         f"outm2={mapped2}",
-        f"threads={threads}"
+        f"threads={threads}",
+        f"minid=0.1",
+        f"-Xmx24g"
     ]
 
     code, out, err = run_cmd(cmd)

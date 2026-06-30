@@ -88,6 +88,11 @@ pca.wrap <- ggplot() +
   geom_point(data=pcaLSR.samp,aes(x=PC1,y=PC2,fill=Genus),shape=21,size=3) +
   facet_wrap(~Genus) + theme_bw() + theme(legend.position="none")
 
+pc1.pc2 <- ggplot() +
+  geom_point(data = transform(pcaLSR.samp, Genus = NULL), color = "grey85", aes(x=PC1, y=PC2),size=3,alpha=0.5) +
+  geom_point(data=pcaLSR.samp,aes(x=PC1,y=PC2,fill=Genus),shape=21,size=3) +
+  theme_bw() + theme(legend.position="none")
+
 pc3.pc4 <- ggplot() +
   geom_point(data = transform(pcaLSR.samp, Genus = NULL), color = "grey85", aes(x=PC3, y=PC4),size=3,alpha=0.5) +
   geom_point(data=pcaLSR.samp,aes(x=PC3,y=PC4,fill=Genus),shape=21,size=3) +
@@ -95,7 +100,7 @@ pc3.pc4 <- ggplot() +
 
 library(patchwork)
 
-pc1.pc2 + pc3.pc4
+pc1.pc2 + pca.wrap
 
 ############################################################################
 ############################################################################
@@ -105,13 +110,13 @@ pc1.pc2 + pc3.pc4
 
 # Create a tibble to get the species means  
 sp.means <- adata %>%
-  group_by(Genus.species) %>%
-  summarise_at(vars(SVL,HLL,HW,EY,IN,EN,THIRD), mean)
+  dplyr::group_by(Genus.species) %>%
+  dplyr::summarise_at(vars(SVL,HLL,HW,EY,IN,EN,THIRD), mean)
 sp.means$Genus <- strex::str_before_first(sp.means$Genus.species," ")
 
 # Save the species mean file
 write.csv(sp.means, row.names=FALSE,
-          file="Data/Amphibolurinae_Morphology_spMEANS.csv")
+          file="Data/Asterophryinae_Morphology_spMEANS.csv")
 
 ############################################################################
 
@@ -132,7 +137,7 @@ allLSR$Genus <- sp.means$Genus
 
 # Save the log shape ratio file
 write.csv(allLSR, row.names=FALSE,
-          file="Data/Amphibolurinae_AllLSR.csv")
+          file="Data/Asterophryinae_AllLSR.csv")
 
 ############################################################################
 
